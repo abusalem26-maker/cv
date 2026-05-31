@@ -99,9 +99,94 @@
             </div>
         </main>
 
+        <section class="blog">
+            <h3>المدونة</h3>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h4><a href="#">كل ما تريد معرفته عن نظام العمل السعودي الجديد</a></h4>
+                    <p class="blog-meta">نُشر في 15 مايو 2026</p>
+                    <p>تعرف على أبرز التعديلات في نظام العمل السعودي، بما في ذلك حماية الأجور، تنظيم العقود، وآليات التفتيش الجديدة.</p>
+                </article>
+                <article class="blog-card">
+                    <h4><a href="#">حقوق العمال في المملكة العربية السعودية</a></h4>
+                    <p class="blog-meta">نُشر في 10 مايو 2026</p>
+                    <p>دليل شامل حول حقوق العمال في السعودية: ساعات العمل، الإجازات، التأمينات الاجتماعية، وإنهاء الخدمة.</p>
+                </article>
+                <article class="blog-card">
+                    <h4><a href="#">كيفية تقديم بلاغ تفتيش عمالي</a></h4>
+                    <p class="blog-meta">نُشر في 5 مايو 2026</p>
+                    <p>خطوات تقديم بلاغ تفتيش عمالي عبر وزارة الموارد البشرية والتنمية الاجتماعية والإجراءات المتبعة.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h3>الأسئلة الشائعة</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">ما هي عقوبات مخالفي نظام العمل؟</button>
+                    <div class="faq-answer">
+                        <p>تتراوح العقوبات بين الغرامات المالية التي تبدأ من 1,000 ريال وحتى 50,000 ريال، وإغلاق المنشأة، والمنع من الاستقدام، حسب نوع المخالفة وتكرارها.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">كيف يتم تقديم شكوى عمالية؟</button>
+                    <div class="faq-answer">
+                        <p>يمكن تقديم الشكوى عبر منصة "قوى" الإلكترونية التابعة لوزارة الموارد البشرية، أو عبر زيارة مكتب العمل المختص، أو الاتصال على الرقم الموحد 19911.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">ما هي حقوق العامل عند انتهاء العقد؟</button>
+                    <div class="faq-answer">
+                        <p>يحق للعامل الحصول على مكافأة نهاية الخدمة، وشهادة خبرة، ورصيد الإجازات المستحق، والتعويض عن الفصل التعسفي إن وجد.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">هل يمكن للعامل تغيير الكفيل؟</button>
+                    <div class="faq-answer">
+                        <p>نعم، وفقاً لنظام العمل يمكن للعامل الانتقال إلى كفيل آخر بعد انتهاء العقد أو باتفاق الطرفين، مع إمكانية التنقل الوظيفي وفق الضوابط.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">ما هي حالات التفتيش المفاجئ؟</button>
+                    <div class="faq-answer">
+                        <p>تشمل حالات الاشتباه في وجود مخالفات، بناءً على بلاغات العمال، أو ضمن خطط تفتيشية دورية تستهدف قطاعات وأنشطة معينة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">كم مدة سريان تأشيرة العمل؟</button>
+                    <div class="faq-answer">
+                        <p>مدة سريان تأشيرة العمل سنة واحدة قابلة للتجديد، ويجب على صاحب العمل بدء إجراءات إصدار الإقامة فور دخول العامل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social">
+            <h3>تواصل معي</h3>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/abusalem26-maker" target="_blank" rel="noopener" class="social-link linkedin" title="LinkedIn">LinkedIn</a>
+                <a href="https://twitter.com/abusalem26" target="_blank" rel="noopener" class="social-link twitter" title="تويتر">تويتر</a>
+                <a href="https://wa.me/966503559114" target="_blank" rel="noopener" class="social-link whatsapp" title="واتساب">واتساب</a>
+                <a href="mailto:abusalem26@gmail.com" class="social-link email" title="البريد الإلكتروني">بريد</a>
+                <a href="https://abusalem26-maker.github.io/cv" target="_blank" rel="noopener" class="social-link website" title="الموقع">الموقع</a>
+            </div>
+        </section>
+
         <footer>
             <p>&copy; 2026 إبراهيم سالم الصاعدي &mdash; جميع الحقوق محفوظة</p>
         </footer>
     </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isOpen = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!isOpen) item.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
